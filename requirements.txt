@@ -1,0 +1,13 @@
+# Email Agent Requirements
+# Core Python libraries used are built-in:
+# - imaplib (built-in)
+# - smtplib (built-in) 
+# - email (built-in)
+# - json (built-in)
+# - logging (built-in)
+# - unittest (built-in)
+
+# No external dependencies required for basic functionality
+# Optional dependencies for enhanced features:
+# requests>=2.25.0  # For webhook integrations
+# cryptography>=3.0  # For enhanced security

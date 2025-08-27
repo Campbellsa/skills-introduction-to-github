@@ -1,0 +1,57 @@
+{
+  "email": {
+    "address": "your-email@example.com",
+    "password": "your-app-password",
+    "imap_server": "imap.gmail.com",
+    "imap_port": 993,
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587
+  },
+  "filters": [
+    {
+      "name": "Important Senders",
+      "type": "sender",
+      "criteria": ["boss@company.com", "important@client.com"],
+      "action": "priority",
+      "folder": "Important"
+    },
+    {
+      "name": "Marketing",
+      "type": "subject",
+      "criteria": ["unsubscribe", "promotion", "marketing", "deal", "sale"],
+      "action": "auto_delete",
+      "folder": "Marketing"
+    },
+    {
+      "name": "Social Media",
+      "type": "sender_domain",
+      "criteria": ["facebook.com", "twitter.com", "linkedin.com", "instagram.com"],
+      "action": "organize",
+      "folder": "Social"
+    },
+    {
+      "name": "Newsletters",
+      "type": "subject",
+      "criteria": ["newsletter", "weekly update", "digest"],
+      "action": "organize",
+      "folder": "Newsletters"
+    }
+  ],
+  "auto_responses": [
+    {
+      "trigger": "out of office",
+      "response": "Thank you for your email. I am currently out of office and will respond when I return.",
+      "enabled": false
+    },
+    {
+      "trigger": "meeting request",
+      "response": "I have received your meeting request and will review it shortly. Please include preferred times and agenda items.",
+      "enabled": false
+    },
+    {
+      "trigger": "urgent",
+      "response": "I have received your urgent message and will prioritize a response.",
+      "enabled": false
+    }
+  ]
+}
